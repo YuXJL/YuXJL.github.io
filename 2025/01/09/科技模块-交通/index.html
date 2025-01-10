@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>科技模块-交通 | 余行京洛</title><meta name="author" content="余行京洛领导小组"><meta name="copyright" content="余行京洛领导小组"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="通勤交通系统设计 垂直交通：客运电梯系统  轿厢设计：轿厢应具备高承载能力，内部可以设置座椅和信息显示屏，提供舒适的乘坐体验。  导轨系统：采用高强度钢材，配合现代化的磁悬浮技术，确保运行平稳。  配重机房：设在建筑顶部或底部，利用重力原理提升能效，减少能耗。  缓冲器、安全钳和限速器：安装在电梯的底部，以防意外情况发生，确保安全。  控制系统：智能调度系统，通过实时监控乘客流量，优化电梯运行效率">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科技模块-交通">
+<meta property="og:url" content="https://yuxjl.github.io/2025/01/09/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97-%E4%BA%A4%E9%80%9A/index.html">
+<meta property="og:site_name" content="余行京洛">
+<meta property="og:description" content="通勤交通系统设计 垂直交通：客运电梯系统  轿厢设计：轿厢应具备高承载能力，内部可以设置座椅和信息显示屏，提供舒适的乘坐体验。  导轨系统：采用高强度钢材，配合现代化的磁悬浮技术，确保运行平稳。  配重机房：设在建筑顶部或底部，利用重力原理提升能效，减少能耗。  缓冲器、安全钳和限速器：安装在电梯的底部，以防意外情况发生，确保安全。  控制系统：智能调度系统，通过实时监控乘客流量，优化电梯运行效率">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yuxjl.github.io/img/cover/technology_transportaion.png">
+<meta property="article:published_time" content="2025-01-09T11:52:39.000Z">
+<meta property="article:modified_time" content="2025-01-10T14:06:50.000Z">
+<meta property="article:author" content="余行京洛领导小组">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yuxjl.github.io/img/cover/technology_transportaion.png"><link rel="shortcut icon" href="/img/yxjl.png"><link rel="canonical" href="https://yuxjl.github.io/2025/01/09/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97-%E4%BA%A4%E9%80%9A/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '科技模块-交通',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/inject.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/yxjl-icon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-tasks"></i><span> 概述模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%83%BD%E6%BA%90%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-battery-4"></i><span> 能源模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-flask"></i><span> 科技模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-globe"></i><span> 环境模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E4%BA%BA%E7%BE%A4%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-users"></i><span> 人群模块</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">余行京洛</span></a><a class="nav-page-title" href="/"><span class="site-name">科技模块-交通</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-tasks"></i><span> 概述模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%83%BD%E6%BA%90%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-battery-4"></i><span> 能源模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-flask"></i><span> 科技模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-globe"></i><span> 环境模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E4%BA%BA%E7%BE%A4%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-users"></i><span> 人群模块</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">科技模块-交通</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-01-09T11:52:39.000Z" title="发表于 2025-01-09 19:52:39">2025-01-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-10T14:06:50.000Z" title="更新于 2025-01-10 22:06:50">2025-01-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97/">科技模块</a></span></div><div class="meta-secondline"></div></div></div><article class="container post-content" id="article-container"><h1 id="通勤交通系统设计"><a href="#通勤交通系统设计" class="headerlink" title="通勤交通系统设计"></a>通勤交通系统设计</h1><ul>
+<li><p>垂直交通：客运电梯系统</p>
+<ul>
+<li><p><strong>轿厢设计</strong>：轿厢应具备高承载能力，内部可以设置座椅和信息显示屏，提供舒适的乘坐体验。</p>
+</li>
+<li><p><strong>导轨系统</strong>：采用高强度钢材，配合现代化的磁悬浮技术，确保运行平稳。</p>
+</li>
+<li><p><strong>配重机房</strong>：设在建筑顶部或底部，利用重力原理提升能效，减少能耗。</p>
+</li>
+<li><p><strong>缓冲器、安全钳和限速器</strong>：安装在电梯的底部，以防意外情况发生，确保安全。</p>
+</li>
+<li><p><strong>控制系统</strong>：智能调度系统，通过实时监控乘客流量，优化电梯运行效率，减少等待时间。</p>
+</li>
+<li><p>资源分配</p>
+<p>：</p>
+<ul>
+<li>数量：对于 $80m/13$ 层的建筑，每 $5\sim7$ 层需要一台电梯。所以总共应该是 $13/7\times 3=6$ 台。</li>
+<li>体积：按照 $18$ 人载电梯，边长是 $2\times 1.55$，高约 $3$，厚度大约 $10mm$，体积约 $0.13m^3/$个。</li>
+<li>能源：一辆电梯每天用电取约 $90\mathrm{kwh}$，总能源约为 $540\mathrm{kwh}$。</li>
+<li>人口：每棵树的电梯系统由 $2\sim 3$ 人负责监控和调控。</li>
+<li><a target="_blank" rel="noopener" href="https://b2b.baidu.com/q/aland?q=7C2E05141B7205257C0D1A0A7C2E08761A197F290010&amp;id=qid1e44cd4f033483511008d0eef0298f80&amp;answer=17795941480145257995&amp;utype=2｜https://house.hexun.com/2024-06-23/213279307.html｜https://www.jiwu.com/baike/62949.html">参考文献</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>水平交通：有轨电车</p>
+<ul>
+<li><p><strong>线路布局</strong>：在建筑内环设置循环轨道，连接各主要出入口及电梯出口，方便居民出行。</p>
+</li>
+<li><p><strong>车辆设计</strong>：车厢内部设计宽敞，设置无障碍设施，提供座椅和扶手，确保乘客安全。</p>
+</li>
+<li><p><strong>动力系统</strong>：采用电力驱动，确保低噪音和零排放。可以考虑利用太阳能或其他可再生能源供电。</p>
+</li>
+<li><p>资源分配</p>
+<p>：</p>
+<ul>
+<li>体积：一辆有轨电车长宽认为是 $12.5\times 2.6=32.5$，高度认为 $3$ 米。外壳平均厚度认为 $350mm$。则体积约为 $34.13m^3$ 每辆。</li>
+<li>能源：电车用电每公里 $1.84\mathrm{kwh}$。</li>
+<li>人口：每辆车需要 $1$ 位司机瞭望驾驶。</li>
+<li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/有轨电车/2317603">参考文献1</a>｜<a target="_blank" rel="noopener" href="https://b2b.baidu.com/q/aland?q=7A0E031970257C097472046176047A7C7575033C7B0703341B7209097824&amp;id=qidd71909efe81a7f42fba78e2c12562300&amp;answer=5943036779661315783&amp;utype=2｜">参考文献2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="货物运输系统设计"><a href="#货物运输系统设计" class="headerlink" title="货物运输系统设计"></a>货物运输系统设计</h1><ul>
+<li>垂直交通：货运电梯和管道<ul>
+<li><strong>设计特点</strong>：货运电梯应具备较大内部空间，能够装载工业生产及农业所需的重物。</li>
+<li><strong>配重与驱动系统</strong>：与客运电梯类似，但要增强承重能力，并配备更高效的电磁驱动系统。</li>
+<li><strong>管道设计</strong>：采用高强度塑料或金属材料，能够承受较高的压力与磨损。</li>
+<li><strong>货运胶囊</strong>：设计为可拆卸和模块化，便于维护和清洗。</li>
+<li><strong>动力系统</strong>：下行时通过磁回收重力势能，上行由电磁铁驱动，确保高效能耗。</li>
+<li><strong>资源分配</strong>：电梯方面同通勤模块电梯设计，管道运输十分节能且节约体积，忽略不计。</li>
+</ul>
+</li>
+<li>水平运输：货运电车<ul>
+<li><strong>线路布局</strong>：在建筑外环设置循环轨道，连接各货梯和管道出入口，方便货物运输。</li>
+<li>其余设计参考通勤电车部分。</li>
+</ul>
+</li>
+</ul>
+<h1 id="废料运输系统设计"><a href="#废料运输系统设计" class="headerlink" title="废料运输系统设计"></a>废料运输系统设计</h1><p><strong>设计方案</strong>：</p>
+<ul>
+<li><strong>废物处理厂</strong>：设置在每座建筑的底层，集中处理来自各个部分的废料。</li>
+<li><strong>管道设计</strong>：使用高密度聚乙烯管道，确保耐腐蚀性和耐磨性，管道布局要考虑到各个废料的流动路线。</li>
+</ul>
+<p><strong>废料处理系统</strong>：</p>
+<ul>
+<li><strong>分类处理</strong>：在废物处理厂设置智能分类装置，通过传感器自动识别废物类型，确保废物分类精确。</li>
+<li><strong>无害化处理</strong>：采用先进的生物处理技术，将废物转化为可再利用的资源，如堆肥或可回收材料。</li>
+<li><strong>排放系统</strong>：利用类似植物根毛的结构的细管道进行无害化处理后的排放，确保对环境友好。</li>
+</ul>
+<h1 id="与生活的联系"><a href="#与生活的联系" class="headerlink" title="与生活的联系"></a>与生活的联系</h1><ol>
+<li><strong>环保设计</strong>：整个交通系统应采用可再生能源，设置绿化带，减少碳足迹。</li>
+<li><strong>智能管理</strong>：引入物联网技术，对交通系统进行智能监控与管理，提高系统的响应速度与灵活性。</li>
+<li><strong>用户体验</strong>：在设计中考虑人性化设计，提供清晰的指示标志，方便居民和访客的出行。</li>
+<li><strong>生活效率</strong>：尽可能减少等待等垃圾时间，提供更好的公共服务。</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://YuXJL.github.io">余行京洛领导小组</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuxjl.github.io/2025/01/09/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97-%E4%BA%A4%E9%80%9A/">https://yuxjl.github.io/2025/01/09/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97-%E4%BA%A4%E9%80%9A/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://YuXJL.github.io" target="_blank">余行京洛</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://YuXJL.github.io/img/cover/technology_transportaion.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related  no-desc" href="/2025/01/09/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97-%E5%B7%A5%E4%BD%9C/" title="科技模块-工作"><img class="cover" src="https://YuXJL.github.io/img/cover/technology_work.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">科技模块-工作</div></div></div></a><a class="pagination-related  no-desc" href="/2025/01/09/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97-%E6%B8%B8%E6%86%A9/" title="科技模块-游憩"><img class="cover" src="https://YuXJL.github.io/img/cover/technology_entertaiment.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">科技模块-游憩</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/yxjl-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">余行京洛领导小组</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><!--a(href=url_for(config.tag_dir) + '/')--><!--  .headline= _p('aside.tags')--><!--  .length-num= site.tags.length--><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到余行京洛！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E5%8B%A4%E4%BA%A4%E9%80%9A%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.</span> <span class="toc-text">通勤交通系统设计</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B4%A7%E7%89%A9%E8%BF%90%E8%BE%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1"><span class="toc-number">2.</span> <span class="toc-text">货物运输系统设计</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%9F%E6%96%99%E8%BF%90%E8%BE%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.</span> <span class="toc-text">废料运输系统设计</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8E%E7%94%9F%E6%B4%BB%E7%9A%84%E8%81%94%E7%B3%BB"><span class="toc-number">4.</span> <span class="toc-text">与生活的联系</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By 余行京洛领导小组</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script></div></body></html>

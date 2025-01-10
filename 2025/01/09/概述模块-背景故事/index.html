@@ -1,0 +1,393 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>概述模块-背景故事 | 余行京洛</title><meta name="author" content="余行京洛领导小组"><meta name="copyright" content="余行京洛领导小组"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="余有行于京洛兮，遘淫雨之经时。  CHAPTER1 启程那座城市依旧是21世纪初的模样，高楼如迷雾般屹立，桥梁在残破中摇摇欲坠。昔日的繁华，如今已经被一层厚重的黄沙所吞噬，黄色的阳光从灰暗的天幕中透下来，像一把刀，割开了天地的沉寂。 这里是杭州，曾经的人间天堂。自从“过载”的时代风潮席卷整个地球后，这里就再也不曾降下半滴雨水。在茫茫黄沙的中央，伫立着一个高大的球状建筑。冰冷、强硬的钢铁壳折射出的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="概述模块-背景故事">
+<meta property="og:url" content="https://yuxjl.github.io/2025/01/09/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97-%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/index.html">
+<meta property="og:site_name" content="余行京洛">
+<meta property="og:description" content="余有行于京洛兮，遘淫雨之经时。  CHAPTER1 启程那座城市依旧是21世纪初的模样，高楼如迷雾般屹立，桥梁在残破中摇摇欲坠。昔日的繁华，如今已经被一层厚重的黄沙所吞噬，黄色的阳光从灰暗的天幕中透下来，像一把刀，割开了天地的沉寂。 这里是杭州，曾经的人间天堂。自从“过载”的时代风潮席卷整个地球后，这里就再也不曾降下半滴雨水。在茫茫黄沙的中央，伫立着一个高大的球状建筑。冰冷、强硬的钢铁壳折射出的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yuxjl.github.io/img/cover/background_story.png">
+<meta property="article:published_time" content="2025-01-09T06:32:46.000Z">
+<meta property="article:modified_time" content="2025-01-10T13:45:20.000Z">
+<meta property="article:author" content="余行京洛领导小组">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yuxjl.github.io/img/cover/background_story.png"><link rel="shortcut icon" href="/img/yxjl.png"><link rel="canonical" href="https://yuxjl.github.io/2025/01/09/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97-%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '概述模块-背景故事',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/inject.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/yxjl-icon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-tasks"></i><span> 概述模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%83%BD%E6%BA%90%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-battery-4"></i><span> 能源模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-flask"></i><span> 科技模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-globe"></i><span> 环境模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E4%BA%BA%E7%BE%A4%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-users"></i><span> 人群模块</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">余行京洛</span></a><a class="nav-page-title" href="/"><span class="site-name">概述模块-背景故事</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-tasks"></i><span> 概述模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%83%BD%E6%BA%90%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-battery-4"></i><span> 能源模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-flask"></i><span> 科技模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-globe"></i><span> 环境模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E4%BA%BA%E7%BE%A4%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-users"></i><span> 人群模块</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">概述模块-背景故事</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-01-09T06:32:46.000Z" title="发表于 2025-01-09 14:32:46">2025-01-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-10T13:45:20.000Z" title="更新于 2025-01-10 21:45:20">2025-01-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97/">概述模块</a></span></div><div class="meta-secondline"></div></div></div><article class="container post-content" id="article-container"><blockquote>
+<p>余有行于京洛兮，遘淫雨之经时。</p>
+</blockquote>
+<h1 id="CHAPTER1-启程"><a href="#CHAPTER1-启程" class="headerlink" title="CHAPTER1 启程"></a>CHAPTER1 启程</h1><p>那座城市依旧是21世纪初的模样，高楼如迷雾般屹立，桥梁在残破中摇摇欲坠。昔日的繁华，如今已经被一层厚重的黄沙所吞噬，黄色的阳光从灰暗的天幕中透下来，像一把刀，割开了天地的沉寂。</p>
+<p>这里是杭州，曾经的人间天堂。自从“过载”的时代风潮席卷整个地球后，这里就再也不曾降下半滴雨水。在茫茫黄沙的中央，伫立着一个高大的球状建筑。冰冷、强硬的钢铁壳折射出的太阳光辉，是这里与生机有关的唯一迹象。</p>
+<p>这是杭州火种集散中心，人们形象地称之为“铁蛋”。自从“过载”之后，杭州政府便兴建了这样一个建筑，并赶在环境彻底崩坏之前，在铁蛋内成功建立起一个完善的生态系统。只不过，偌大的球却只能供给不到百分之一的人生活。剩下的人，只能在外面的狂沙中，靠着铁蛋中分配的资源过活。每一年，中心会开放一定的名额，球外的人可以通过考试进入铁蛋生活，而名额的数目恰好等于那一年铁蛋中去世的人数。</p>
+<p>肖兴程，是今年能够进入铁蛋生活的幸运儿之一。收到“恭喜您获得集散中心居住权”通知的时候，肖兴程正和他一生的知己兼女友陈忻晓在黄沙路上艰难行进着。经历了数不清多少次失败的他知道，所谓的考试，不过是对于人脉关系的考验，没有背景的人绝对不可能通过考试进入铁蛋。所以肖兴程从来没有，或者已经很久没有去参加考试了。是的，今年的考试他没有报名，却直接收到了邀请函。有那么一刻，他深深地怀疑早已经销声匿迹的诈骗又来了。二人看着这则短信，久久不能从震惊中回神。</p>
+<p>“你啥时候去考的？”</p>
+<p>“我没有啊？我从来没考过。”</p>
+<p>“那……”</p>
+<p>陈忻晓打量着她的男友，这个忠贞不渝的男人是绝对不会欺骗她的。</p>
+<p>“去吧，你去了我们才有生活得更好的希望。”</p>
+<p>“可是我总不能丢下你…”</p>
+<p>肖兴程的眼眶已经湿润，女友的脸庞在他眼中逐渐模糊起来，但是他的大脑却愈发清明，他明白陈忻晓所说的确实无误，千载难逢的机会就摆在他眼前。如果错过了，他就可能无法在有生之年见到铁蛋之内的世界了。</p>
+<p>想到这里，肖兴程不再犹豫。</p>
+<p>……</p>
+<p>现在，铁蛋就在眼前了。集散中心的选址正是曾经的浙江大学紫金港校区，肖兴程是“过载”之前的最后一届毕业生。陌生又熟悉的感觉让他感慨万分。</p>
+<h1 id="CHAPTER2-“加倍”的美味"><a href="#CHAPTER2-“加倍”的美味" class="headerlink" title="CHAPTER2 “加倍”的美味"></a>CHAPTER2 “加倍”的美味</h1><p>“近日，我市再次发现一起以‘原生态健康海鲜’为招牌的百年渔业公司家畔水产株式会社与某名为‘蠹’的基因突变生物代加工厂存在密切合作。其具体目的不详，但据相关知情者透露，家畔水产株式会社长期以来存在为节省成本采用基因突变海洋生物进行商品制作的行为。消息一出，令众多消费者哗然。”</p>
+<p>张弛清早醒来，打开前夜打包的80元烧烤，边吃边听拯救者Y9000P中传来的广播声。听到这则消息，他慌乱地放下手中的鱿鱼。</p>
+<p>张弛这才有意识地检查了一遍自己放下的烤鱿鱼，这个自己昨天重金淘到的烤整鱿鱼，原本应该是十条腿，在自己已经吃掉两条腿的情况下，居然还有十五条腿！他不禁头涔涔，不久就变为泪潸潸了，并且不住地想作呕。幸运的是，一位坐在旁边的彪形man室友给他来了个肘击，让他吐出了那还没开始消化的两条鱿鱼腿……</p>
+<h1 id="CHAPTER3日记（1）"><a href="#CHAPTER3日记（1）" class="headerlink" title="CHAPTER3日记（1）"></a>CHAPTER3日记（1）</h1><p>这是一场人类与命运的对决。</p>
+<p>资源匮乏，环境破坏，生物灭绝，一切都像我的百万立方老师徐象国所说，世界将走向寂静。人类开始不择手段地想要扭转这一切，于是“过载”时代开启。</p>
+<p>核能变成了人类主要的能源，全球角角落落都分布着核电站，一时间，人类科技突飞猛进，生活越来越好。就在一切都向好发展的时候，渔业公司发现的变异生物如同一桶冰水浇灭了所有人的热情。紧接着，不可遏制地，沙漠化席卷全球，核电站的泄漏变得更加严重，地狱般的生活又回来了，甚至更糟。于是火种计划启动了……</p>
+<h1 id="CHAPTER4-穹顶之下"><a href="#CHAPTER4-穹顶之下" class="headerlink" title="CHAPTER4 穹顶之下"></a>CHAPTER4 穹顶之下</h1><p>“验证成功。欢迎您，肖兴程先生。”</p>
+<p>伴着机械音的播报，肖兴程走进了原本紧闭的大门。扑面而来的，是一股异常令人舒适的久远味道。毫无疑问，里面的空气经过了严格的过滤和净化，与外面被污染的空气完全不同。</p>
+<p>“嘿！肖兴程！”</p>
+<p>一个熟悉的声音叫住了肖兴程。他一转头就看见那声音的主人。</p>
+<p>“张弛！你考进来啦？恭喜啊！”</p>
+<p>“嘿嘿……“张弛一脸不好意思，用手挠了挠后脑勺，”你不是也……“</p>
+<p>“我不知道咋进来的啊，我甚至没有报名！“</p>
+<p>听到这里，张弛站住了，一脸严肃地问肖兴程：“你说的都是真的？”</p>
+<p>“那当然，我骗你干嘛？”肖兴程回应道，“怎么了？”</p>
+<p>“我也是。”</p>
+<p>对视良久，二人确定了对方没有开玩笑，于是变得更加的疑惑：凭什么是我们？我们要来干什么？但是显然继续疑惑并没有什么帮助，只有顺从命运给他们的安排，才能看到事情的真相。于是两个人跟随着人流继续走向下一个道闸——果不其然，在这儿，他们与多数人分开了。而向他们开启的另一条路，几乎没有人——</p>
+<p>心情复杂的两人接着向前走，眼前忽然就出现了一个穿着笔挺西装的瘦高身影。来人戴着眼镜，嘴角有着一丝难以察觉的笑，拦住了二人。“肖兴程，和张弛，对吗？“他几乎不带感情地问道。从外表上来看，他的年纪应该与二人差不了多少，但说话的语气却成熟地让人意外。“我姓鲁，人类火种计划驻‘余行京洛’宜昌大使馆馆长兼外交与发展联合部部长，你们可以叫我鲁先生。”</p>
+<p>肖兴程皱了皱眉头。他向来对这种打着官腔高高在上的人没有什么好感。</p>
+<p>“跟我来，我给你们解释一切。”</p>
+<h1 id="CHAPTER5-未来可期"><a href="#CHAPTER5-未来可期" class="headerlink" title="CHAPTER5 未来可期"></a>CHAPTER5 未来可期</h1><p>每天早晨，她都会朝着铁蛋的方向眺望。</p>
+<p>自从肖兴程走后，陈忻晓每天都孤身一人住在不算简陋的房屋里。除了窗外无尽的黄沙，屋内设施还算齐全。至少环境的崩坏也没有恶劣到影响人们的生存，否则铁蛋这样的选拔规则也不可能不引起民众的反抗。</p>
+<p>但是陈忻晓并不是一个目光短浅的人，她能和肖兴程一见钟情的原因之一是她和他一样是一个能看得长远的人。她看到的是人类眼前灰暗的命运。现在核电站的泄露越来越严重，但是人类却丝毫没有顾忌。基因突变的利用使不法商家牟取暴利，人类对地球资源最后的榨取却营造出一种盛世的假象。通货膨胀导致贫穷变得普遍，但是有钱的人却过着朱门酒肉的生活。这从媒体上得知的一切和发生在身边的一切，让她想起了清王朝。这大概是人类最后的光辉了，这颗地球最后，可能会像《银河帝国》所描绘的那样，变成一个充满放射性而不可生存的地方。</p>
+<p>她突然笑了，她觉得自己和杞人没有什么区别。在末日面前，自己不过是一粒微尘，只要过好自己的日子就好了。男友不是已经去铁蛋了吗？还是以一种如此特殊的方式。那他一定有办法让她，和他们未来的孩子，走进铁蛋生活。</p>
+<p>这样看来，真是未来可期啊。</p>
+<h1 id="CHAPTER6-火种计划"><a href="#CHAPTER6-火种计划" class="headerlink" title="CHAPTER6 火种计划"></a>CHAPTER6 火种计划</h1><p>“我们邀请你们进入火种集散中心，是为了火种计划。”</p>
+<p>“什么！？难道是想让我们在这里面为人类传宗接代？不可能！”张弛跳了起来，如果不是肖兴程一把把他按回椅子，他怕是能怼到鲁先生的脸上。</p>
+<p>“不不不，你们误会了。”鲁先生仍然异常平静地说道，“我要说的是火种计划$2.0$。”</p>
+<p>“$2.0$？”</p>
+<p>“这是因为火种计划 $1.0$ 的失败。火种计划 $1.0$ 原本是希望人类在集散中心继续发展核聚变，来代替现在的裂变，从而挽回世界环境的颓势，并期望集散中心里的人能够背负起传递人类火种的使命。但是，人类似乎并没有从环境的崩坏中汲取教训，反而更加肆意地榨取地球的资源，随意使用基因技术，对日渐严重的核污染充耳不闻。地球环境现在已经完全失衡。”</p>
+<p>“还有集散中心滋生的腐败。尽管在开始的时候，明文规定不允许通过关系手段在通行考试中作弊。但是随着时间的推移，交通不便引起的地方独立越来越严重，许多优秀的科学家在茫茫狂沙中生存，而蠢货却通过人情关系混进来享乐。这也同时导致人类的科技停滞不前，核聚变的实现变成了幻想。人类没有明天了。”</p>
+<p>“但是火种计划 $2.0$ 给了我们新的希望。随着天文学发展到极致，我们观测到一颗与地球过载之前完全相同的地球，除了没有人，无论是地形、气候，还是动物分布，一切都和之前的地球一模一样。我们真的怀疑这是上帝给人类的第二次机会。知悉此事之后，火种计划总设计师徐象国教授当机立断决定启动 $2.0$，希望通过选拔一些人，去那个星球上接续人类火种。</p>
+<p>“而徐教授明确指出希望由他在校任职期间所教过的百万立方课的学生——他们现在大多已经步入壮年——来作为领袖，带领人们去那里生存，同时，他们可以拥有调动目前地球上除了核科技外一切可能的技术和能源。他说他们会知道怎么办的，只要告诉他们当时所提的设想已经完全变成了现实，包括那个宝可梦。”</p>
+<p>鲁先生合上了手中的文件夹，直直的看着眼前两个人。没等二人发问，他便又加了句：</p>
+<p>“没关系，现在没有一个人明白徐老师说的是什么。但是你们现在需要马上去宜昌。我会安排好两位的行程，希望二位配合。”</p>
+<p>说罢他便匆匆走出了房间，但是在关门前，他又冒出来一句：</p>
+<p>“哦对了，你们每个人可以带一个最重要的人一起去。别的我无法确定，但是这一去，绝对不会再回来是我能保证的。希望二位在接下来的空闲时间里好好考虑一下。”</p>
+<p>门关上了。 </p>
+<h1 id="CHAPTER7-旧历-21-世纪史料"><a href="#CHAPTER7-旧历-21-世纪史料" class="headerlink" title="CHAPTER7 旧历 21 世纪史料"></a>CHAPTER7 旧历 21 世纪史料</h1><p>旧历 $21$ 世纪 $20$ 年代，在消费主义的潜移默化之下，人们盲目追求享乐，铺张浪费。为了满足人们对美好生活的需求，各国开始开发新的能源。其中，某大力发展核能的国家在处理废水时不顾国际反对直接将其排海，海洋物种、淡水资源、可利用土地等自然资源以超出人类预期的速度被严重污染。几十年间，新生儿畸形率大增。社会舆论氛围倾向于悲观、焦虑化，人类灭亡论更是让社会生育率无限趋近于 $0$。</p>
+<p>在“黑云压城城欲摧”的情况之下，联合国内部召开秘密会议，邀请各国政界首脑以及各领域顶尖人才。会上，发展与保护委员会会长徐象国提出“余行京洛”计划。徐象国会长指出，最新的天文研究表明，在半人马星座附近有一颗和地球类似的星球，这将是人类未来的希望。徐象国会长强调，在一百年内，现有的人类科技水平只支持将一百万个立方体和有限个人进行空间传送，所以应当采用科学合理的方式进行新世界的建设。徐象国会长指出，联合国发展与保护委成员将会经过严密的评估和筛选^[1]^，挑选人类代表，携带必要的科技与文化成果，前往该星球建立新的人类文明，向未来进发。最终，徐象国的提议获得了各方一致认可，经过票选，徐象国会长被任命为“人类未来”项目总设计师^[2]^。</p>
+<p>会后，项目核心人员进行了海量资料的查阅和审核，在著名气象学家、地理学家竺可桢先生编写的《长江流域地质报告》中发现了具有巨大发展潜力的宜昌，并决定将其作为新地球上的发展选址^[3]^。</p>
+<p><strong>[1]</strong> 评估筛选标准可见《『余行京洛』会议附件（第 21476 号）》</p>
+<p><strong>[2]</strong> 未来文明建设目标见《『余行京洛』会议纪要（选段）》</p>
+<p><strong>[3]</strong> 选址及理由可见《『余行京洛』新地球选址研究报告》</p>
+<h2 id="【附件1】“余行京洛”会议附件（第-21476-号）"><a href="#【附件1】“余行京洛”会议附件（第-21476-号）" class="headerlink" title="【附件1】“余行京洛”会议附件（第 21476 号）"></a>【附件1】“余行京洛”会议附件（第 21476 号）</h2><p><strong>会议时间</strong>：旧历 $2044$ 年 $9$ 月 $19$ 日</p>
+<p><strong>会议主席</strong>：徐象国同志</p>
+<p><strong>与会人员</strong>：百万立方项目全体人员</p>
+<p><strong>会议内容</strong>：经严肃讨论与投票表决，会议通过如下筛选方案。</p>
+<h3 id="人口筛选方案"><a href="#人口筛选方案" class="headerlink" title="人口筛选方案"></a>人口筛选方案</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>比例</th>
+<th>人数</th>
+<th>筛选领域</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内定人员</td>
+<td>20%</td>
+<td>487人</td>
+<td>科学研究、教育、工业、医疗等</td>
+<td>每位内定人员可以携带两位亲属。主要负责新世界的核心职能。</td>
+</tr>
+<tr>
+<td>内定亲属</td>
+<td>40%</td>
+<td>974人</td>
+<td></td>
+<td>每位内定人员携带的两位亲属，共974人。</td>
+</tr>
+<tr>
+<td>随机分配</td>
+<td>40%</td>
+<td>974人</td>
+<td>确保职业多样性和社会平衡性</td>
+<td>覆盖不同职业、背景、技能水平，确保社会多样性和活力。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="内定人员详细分布"><a href="#内定人员详细分布" class="headerlink" title="内定人员详细分布"></a><strong>内定人员详细分布</strong></h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>领域</th>
+<th>比例</th>
+<th>人数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>科学研究与技术创新</td>
+<td>40%</td>
+<td>195人</td>
+<td>科学家、工程师、技术专家，专注于能源、基础设施和科技创新。</td>
+</tr>
+<tr>
+<td>教育</td>
+<td>30%</td>
+<td>146人</td>
+<td>教师、教育管理者以及科研人员，负责认同及青少年的基础教育和高等教育体系。</td>
+</tr>
+<tr>
+<td>工业与制造</td>
+<td>20%</td>
+<td>97人</td>
+<td>工业和能源技术人员，确保能源生产、工业制造的高效运作。</td>
+</tr>
+<tr>
+<td>医疗与社会服务</td>
+<td>10%</td>
+<td>49人</td>
+<td>医生、护士、心里辅导员以及社会工作者，负责社会健康与保障系统。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="筛选及分配流程"><a href="#筛选及分配流程" class="headerlink" title="筛选及分配流程"></a>筛选及分配流程</h3><h4 id="内定人员的筛选流程："><a href="#内定人员的筛选流程：" class="headerlink" title="内定人员的筛选流程："></a>内定人员的筛选流程：</h4><ol>
+<li><p><strong>推荐与申请</strong>：通过公开或定向邀请，收集来自各界的申请人。</p>
+</li>
+<li><p><strong>评审与选拔</strong>：由专家委员会对候选人进行多轮评估，重点关注其领域贡献及未来潜力。</p>
+</li>
+<li><p><strong>亲属确认</strong>：每位内定者确认其携带的2位亲属，并安排对应生活区及后续职业培训。</p>
+</li>
+</ol>
+<h4 id="随机分配流程："><a href="#随机分配流程：" class="headerlink" title="随机分配流程："></a>随机分配流程：</h4><ol>
+<li><p><strong>报名与抽签</strong>：所有有意加入新世界的人员可通过报名进入随机分配名单。</p>
+</li>
+<li><p><strong>多元抽选</strong>：根据内定人员及其亲属的人数与性别确定随机分配人员的具体情况，然后进行抽签，以确保分配过程中的性别、年龄、职业背景等多样性。</p>
+</li>
+<li><p><strong>职业与生活安置</strong>：根据抽签结果，对所有随机分配者进行职业培训与生活安排。</p>
+</li>
+</ol>
+<h2 id="【附件2】《“余行京洛”会议纪要（选段）》"><a href="#【附件2】《“余行京洛”会议纪要（选段）》" class="headerlink" title="【附件2】《“余行京洛”会议纪要（选段）》"></a>【附件2】《“余行京洛”会议纪要（选段）》</h2><p>……</p>
+<p><strong>徐象国</strong>：我们的旧地球有着很多问题。</p>
+<p>在过载的地球上，人类过于依赖于不可再生能源，对再生能源的开发力度不够。这样，随着能源需求的无限制扩大，必定将人类引向核能，但现实证明，我们在核能领域的科技发展速度远远慢于我们能源需求的扩大，也就导致了许许多多的悲剧（手指呈现着变异鱿鱼的PPT页面，痛心疾首）。第二，资源的不均等分配导致部分人占有大量资源，这使得占有大量资源的人会在无意识中损耗了一部分资源。第三，人类将科技应用于生产的力度不够，部分高新技术由于成本的原因无法得到大规模施行，从而使生产力的发展速度低下。第四，污染的处理系统缺位，导致我们的生产活动对于环境以及我们可以利用的资源造成一定破坏。第五，旧世界无规划的生产会造成产能的过剩，所以每一件生产的产品都会产生浪费。</p>
+<p>（全场肃静，低头沉思）</p>
+<p><strong>徐象国</strong>：这样的世界，人类喜欢吗？（停顿）人类不喜欢！（掷地有声）人类能发展下去吗？能吗？（停顿，长喘一口气）所以我们才有了我们的新方案。（PPT翻页到余行京洛的介绍，全场掌声雷动）在新的家园中，我们将采取以可再生能源为主的方式，并且采取一系列节电措施，在控制能耗的前提下尽量提高我们的生活质量。另外，我们采取计划加市场的资源分配制度，即在每个人保有最基础的生存资源前提下，将多余的资源分配给努力建设新家园的人。此外，我们还有更多的科技支持。我们会将最前沿的科技直接应用于新世界的建设中去，将我们的生产力在一个狭小的空间内达到最高值。而为了保护环境、推动可持续发展，新家园的生产废料和生活垃圾将会被直接转送中央处理中心，实现对外零排放的目标。我们的生产采用计划为主的形式，哪里有需求，生产就往哪里靠；哪里要更新迭代，生产就往哪里去。为避免资源的浪费、提高资源利用率，我们采用了相关的奖惩制度，对于浪费者我们采取强制扣除个人资源享有量的方式来限制能源的浪费。但我相信，所有新家园的建设者们都将认同我们的发展理念。我们也会通过筛选，让更多无私奉献的建设者们参与建设。我希望，也坚信，我们一定能将旧世界的不合理行为纠正过来，人类的未来将星河璀璨！（掌声久久不绝）</p>
+<p>……</p>
+<p><strong>主持人</strong>：感谢徐象国总设计师的精彩发言。接下来各代表还有什么补充的吗？</p>
+<p><strong>代表A</strong>：我们的世界位于宜昌东南部的平原地区，同时将有一座小型的水电站建立在宜昌西部山地，为我们的世界提供充足的电能。我们选取的水电站经纬度为经度 $111.0490792°$，纬度 $30.8244296°$；城区经纬度为经度 $111.3149776°$，纬度 $30.7159514°$。</p>
+<p>……</p>
+<p>注：该文件为选段。</p>
+<p> <img src="https://zjucube.oss-cn-hangzhou.aliyuncs.com/uploads/2024/09/22/09001812197wmTR7Zk.jpeg" alt="img"></p>
+<h2 id="【附件3】《“余行京洛”新地球选址研究报告》"><a href="#【附件3】《“余行京洛”新地球选址研究报告》" class="headerlink" title="【附件3】《“余行京洛”新地球选址研究报告》"></a>【附件3】《“余行京洛”新地球选址研究报告》</h2><p>自人类危机纪元以来，联合国发展与保护委员会在学习领会、宣讲阐释、贯彻落实徐总设计师的未来理念方面做了大量工作。为把握新人类发展阶段，贯彻落实新人类发展理念，构建“人类未来”发展格局，经大会严格讨论、民主票选，拟定新地球选址为东经 $110°15’\sim112°04’$、北纬 $29°56’\sim31°34’$ 之间（原地球宜昌）。</p>
+<p>选定宜昌的考量是着眼于现实的。在原地球，宜昌因水而名、因水而兴，拥有长江、清江等大小 $99$ 条河流的重要河段，水能资源可开发量达 $3000$ 万千瓦，是世界水电资源最富集、开发前景最好的地区之一。在以宜昌城区为中心的方圆 $100$ 公里范围内，已建或在建的有三峡、葛洲坝、隔河岩和水布垭等 $4$ 座大型水电站。由宜昌各大水电站发出的电力，按 $1000$ 公里输电半径，已经输送到南至广州深圳、东至上海江浙、北至北京天津、西至成都重庆，照亮了大半个中国，宜昌因此堪称“世界水电之都”。为避免因能源不足而重蹈覆辙，更为提升新地球人类生活福祉，我们选择宜昌。</p>
+<p>选定宜昌的考量是经过深思的。经过实地考察，委员会发现，宜昌存在着地质灾害，但主要集中于西北山区。经过严格讨论，我们提出将建设地点定为东南平原。我们清楚地看到宜昌作为建筑用地的巨大优势，也深刻理解宜昌作为生活用地的安定与和谐。</p>
+<p>选定宜昌的考量是具有重大战略意义的。宜昌地处长江上游与中游的结合部、鄂西武陵山脉和秦巴山脉向江汉平原的过渡地带，“上控巴蜀，下引荆襄”，在人类取得稳定生活、达成“百年奋斗目标”乃至成就“千年宏图伟业”后，宜昌可以作为贯通未来新建设用地的交通枢纽，成为经济、政治、文化、社会等方面交流的“中转站”和“承重墙”。路虽远，行则将至；事虽难，做则必成。宜昌也将作为人类新发展的“试验田”，成为后期发展的范本和蓝图。</p>
+<p>选址于宜昌是正确的、唯物主义的，但真正的成功更离不开各位执行者、行动派、实干家。我们衷心祝愿新地球的宜昌能够完成全人类托付的任务，成为一个绿色、和谐、美好、可持续的世界！</p>
+<h1 id="CHAPTER8-（日记-2）思念"><a href="#CHAPTER8-（日记-2）思念" class="headerlink" title="CHAPTER8 （日记 2）思念"></a>CHAPTER8 （日记 2）思念</h1><p>这是肖兴程离开第 $11$ 天。</p>
+<p>地球不堪重负。虽然现在还风平浪静，但是听说无核正在急剧缩减。不知道什么时候核辐射会蔓延到杭州。我可不想以后和肖兴程因为辐射没法拥有一个正常的孩子。要是在核辐射到来之前我还不能离开这里，我就自己去找他。</p>
+<p>也不知道他怎么样了，听说最近铁蛋里出了好几起暴动，是环境主义者的起义。但是过于激进了，有的人甚至手持自制的火枪。虽然马上就被镇压下来，但是别处又零星出现几起，真是太可怕了。希望肖不会有事。</p>
+<h1 id="CHAPTER9-回忆·抉择"><a href="#CHAPTER9-回忆·抉择" class="headerlink" title="CHAPTER9 回忆·抉择"></a>CHAPTER9 回忆·抉择</h1><p>“百万立方，你记得吧。“</p>
+<p>”当然，印象深刻。“肖兴程点着头，思绪又飘回二十年前。那时，过载时代还没有来临，但是一群学生却跟着一位异想天开的教授构建了百万立方的世界，感受着世界末日般的痛苦。那时的他们总以为这只是幻想，所以不着边际地构想出一个世界，却也足够现实，足够优美。但今天，让他们来把当年的设想落成现实的时候，无疑，山一般的问题扑面而来。肖兴程感到自己的后脑勺被狠狠地砸了一下，自己的思绪如同一团浆糊。想必，张弛也是一样，更何况他今天早上刚刚吃了一只十五只腿的鱿鱼，面色更加难看了。</p>
+<p>”对了，那个人选。如果是宜昌的话，确实和我们当初的选址一样，那么组内的成员也不会变，到时候等和别人会合了再作打算。但是带谁走，这确实是一个困难的话题……“说着，张弛陷入了沉思。相反的，肖兴程心里却清楚得很，他只要带一个人。</p>
+<p>……</p>
+<p>陈忻晓又站在窗边眺望着铁蛋，她也不能确定肖兴程是否还在那里，直觉告诉她，肖兴程已经在很远很远的地方了，也许是北京？或者上海？她不能确定。但是她知道，肖兴程绝对不会丢下她不管。</p>
+<p>……</p>
+<p>”想好了吗？我们该出发了。”鲁先生打开房门。思绪迷离的肖兴程和张弛又重新回到了现实。“想好了，西湖亭上，陈忻晓。”肖兴程站起来，就在那一刻，他突然注意到鲁先生衣领附近有着难以令人察觉的血迹。“他刚才去干嘛了？”肖兴程暗自思忖着，但他没有说出来，而是不动声色地慢慢坐下。鲁先生没有发现肖兴程的异常，并转向张弛，冷漠地说：“快一点，如果你现在还不决定的话，我们就只能确保你一个人安全抵达宜昌了。”“我……我真的不知道带谁……”张弛可怜兮兮地看向鲁先生。</p>
+<p>“那没办法了，我们出发吧。”说着，他便一如既往地麻利的转过身，打开门，头也不回地走了出去。</p>
+<h1 id="CHAPTER10-（日记-3）前方"><a href="#CHAPTER10-（日记-3）前方" class="headerlink" title="CHAPTER10 （日记 3）前方"></a>CHAPTER10 （日记 3）前方</h1><p>今天，我的肖兴程终于有消息了！这么多天来，我不是没有动摇过，但我总记得他那双亮亮的眼睛，也记得他是如何真诚地向我承诺过“可以永远相信我”。在他离开的第 $14$ 天，一群武装得严严实实的人敲开了我们的家门，并核实了我的身份。然后我便被带到了萧山机场，那里有一架客机正待起飞。但是我找不到他，我问了“押送”我的士兵，但他只说是照章办事，并不知道此行的意义和目的地。</p>
+<p>我还是决定相信这一切。</p>
+<p>等待起飞时，我看向舷窗外。曾经这里多么繁华，如今却十分萧条。大多数登机口都不能用了，仅存的少数几个也有点摇摇欲坠。等机场完全报废的那天，杭州还能怎么活下去呢？</p>
+<p>要是一切都能从头开始该多好，如果我们没有滥用核能，如果……</p>
+<h1 id="CHAPTER11-团聚·再启程"><a href="#CHAPTER11-团聚·再启程" class="headerlink" title="CHAPTER11 团聚·再启程"></a>CHAPTER11 团聚·再启程</h1><p>伴随着隆隆的轰鸣声，客机着陆了，陈忻晓从三峡机场走出来的时候，她似乎明白了这一切。肖兴程曾经和她聊起过百万立方的设想，她还大力称赞了宜昌的选址。但此刻，她亲身走入的时候，这座城市面对“过载”的侵蚀，已经完全没有了当初想象中的美好。尽管有长江流水，还有些许植物，但是目光所及之处，只有一派死气沉沉。</p>
+<p>不远处有一个小型的铁蛋。“肖想必就在那里。”陈忻晓思量着。</p>
+<p>于此同时，已经和二十年前的组员会合的肖兴程也通过会议室的窗户眺望着机场的方向。分别后的每一天，陈忻晓眺望着，他也眺望着，颇有些“此时相望不相闻”的悲戚。今天就是亲属专机到达的日子，肖兴程从早上就开始心不在焉，完全没有关注会议的内容，几个组员也全然没有心情去考虑人类的未来，毕竟，他们也是有血有肉的人啊。</p>
+<p>……</p>
+<p>“……人类不能再继续依靠，或者完全依靠核能了。在更安全清洁的方式出现之前，你们的世界只能使用清洁能源，而且要做到和那个世界共存亡，人们之间要相处和谐，共同创造一个‘更好’的新世界……与你们一道还有别的十一组先锋队，他们分布在中国的各个地方，也希望你们之间能够互相合作，而不要起矛盾。这样的人类已经太渺小了，我们现在精灵球的库存是十个，接下来最多还能造出两个，所以最多能派遣十二各组，每个组约摸几千人，那也不到现在中国人口的万分之一。所以，你们一定要谨慎地活下去……”</p>
+<p>会议上，徐教授正发表着讲话，同时他也带来了一个令人振奋的消息。</p>
+<p>“最后，你们最亲密的人正在你们的房间里，希望你们能去和他们见见面吧。”</p>
+<p>撞开房门，眼泪和拥抱的温度，只有他和她清楚……</p>
+<p>……</p>
+<p>最新消息报道，由徐象国教授组织的新地球先锋队，正带着最先进的“宝可梦”技术，向着新地球进军，他们将会延续人类的火种，避免人类消亡一旦。同时他也希望，地球上的人类能够尽力自救，不要再沉迷于落日余晖的幻想中了……</p>
+<h1 id="CHAPTER12-（日记-4）再见"><a href="#CHAPTER12-（日记-4）再见" class="headerlink" title="CHAPTER12 （日记 4）再见"></a>CHAPTER12 （日记 4）再见</h1><p>终于见到了肖，他一点都没有变。</p>
+<p>新地球会怎么样呢？按他们的说法，是过载之前美丽的地球。我已经迫不及待了。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://YuXJL.github.io">余行京洛领导小组</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuxjl.github.io/2025/01/09/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97-%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/">https://yuxjl.github.io/2025/01/09/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97-%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://YuXJL.github.io" target="_blank">余行京洛</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://YuXJL.github.io/img/cover/background_story.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width no-desc" href="/2025/01/09/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97-%E6%96%B0%E7%9A%84%E6%8C%91%E6%88%98/" title="新的挑战"><img class="cover" src="https://YuXJL.github.io/img/cover/new_challenges.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">新的挑战</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/yxjl-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">余行京洛领导小组</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><!--a(href=url_for(config.tag_dir) + '/')--><!--  .headline= _p('aside.tags')--><!--  .length-num= site.tags.length--><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到余行京洛！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER1-%E5%90%AF%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">CHAPTER1 启程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER2-%E2%80%9C%E5%8A%A0%E5%80%8D%E2%80%9D%E7%9A%84%E7%BE%8E%E5%91%B3"><span class="toc-number">2.</span> <span class="toc-text">CHAPTER2 “加倍”的美味</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER3%E6%97%A5%E8%AE%B0%EF%BC%881%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">CHAPTER3日记（1）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER4-%E7%A9%B9%E9%A1%B6%E4%B9%8B%E4%B8%8B"><span class="toc-number">4.</span> <span class="toc-text">CHAPTER4 穹顶之下</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER5-%E6%9C%AA%E6%9D%A5%E5%8F%AF%E6%9C%9F"><span class="toc-number">5.</span> <span class="toc-text">CHAPTER5 未来可期</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER6-%E7%81%AB%E7%A7%8D%E8%AE%A1%E5%88%92"><span class="toc-number">6.</span> <span class="toc-text">CHAPTER6 火种计划</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER7-%E6%97%A7%E5%8E%86-21-%E4%B8%96%E7%BA%AA%E5%8F%B2%E6%96%99"><span class="toc-number">7.</span> <span class="toc-text">CHAPTER7 旧历 21 世纪史料</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%80%90%E9%99%84%E4%BB%B61%E3%80%91%E2%80%9C%E4%BD%99%E8%A1%8C%E4%BA%AC%E6%B4%9B%E2%80%9D%E4%BC%9A%E8%AE%AE%E9%99%84%E4%BB%B6%EF%BC%88%E7%AC%AC-21476-%E5%8F%B7%EF%BC%89"><span class="toc-number">7.1.</span> <span class="toc-text">【附件1】“余行京洛”会议附件（第 21476 号）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E5%8F%A3%E7%AD%9B%E9%80%89%E6%96%B9%E6%A1%88"><span class="toc-number">7.1.1.</span> <span class="toc-text">人口筛选方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%9A%E4%BA%BA%E5%91%98%E8%AF%A6%E7%BB%86%E5%88%86%E5%B8%83"><span class="toc-number">7.1.2.</span> <span class="toc-text">内定人员详细分布</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%9B%E9%80%89%E5%8F%8A%E5%88%86%E9%85%8D%E6%B5%81%E7%A8%8B"><span class="toc-number">7.1.3.</span> <span class="toc-text">筛选及分配流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E5%AE%9A%E4%BA%BA%E5%91%98%E7%9A%84%E7%AD%9B%E9%80%89%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="toc-number">7.1.3.1.</span> <span class="toc-text">内定人员的筛选流程：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E5%88%86%E9%85%8D%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="toc-number">7.1.3.2.</span> <span class="toc-text">随机分配流程：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%80%90%E9%99%84%E4%BB%B62%E3%80%91%E3%80%8A%E2%80%9C%E4%BD%99%E8%A1%8C%E4%BA%AC%E6%B4%9B%E2%80%9D%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81%EF%BC%88%E9%80%89%E6%AE%B5%EF%BC%89%E3%80%8B"><span class="toc-number">7.2.</span> <span class="toc-text">【附件2】《“余行京洛”会议纪要（选段）》</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%80%90%E9%99%84%E4%BB%B63%E3%80%91%E3%80%8A%E2%80%9C%E4%BD%99%E8%A1%8C%E4%BA%AC%E6%B4%9B%E2%80%9D%E6%96%B0%E5%9C%B0%E7%90%83%E9%80%89%E5%9D%80%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A%E3%80%8B"><span class="toc-number">7.3.</span> <span class="toc-text">【附件3】《“余行京洛”新地球选址研究报告》</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER8-%EF%BC%88%E6%97%A5%E8%AE%B0-2%EF%BC%89%E6%80%9D%E5%BF%B5"><span class="toc-number">8.</span> <span class="toc-text">CHAPTER8 （日记 2）思念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER9-%E5%9B%9E%E5%BF%86%C2%B7%E6%8A%89%E6%8B%A9"><span class="toc-number">9.</span> <span class="toc-text">CHAPTER9 回忆·抉择</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER10-%EF%BC%88%E6%97%A5%E8%AE%B0-3%EF%BC%89%E5%89%8D%E6%96%B9"><span class="toc-number">10.</span> <span class="toc-text">CHAPTER10 （日记 3）前方</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER11-%E5%9B%A2%E8%81%9A%C2%B7%E5%86%8D%E5%90%AF%E7%A8%8B"><span class="toc-number">11.</span> <span class="toc-text">CHAPTER11 团聚·再启程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHAPTER12-%EF%BC%88%E6%97%A5%E8%AE%B0-4%EF%BC%89%E5%86%8D%E8%A7%81"><span class="toc-number">12.</span> <span class="toc-text">CHAPTER12 （日记 4）再见</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By 余行京洛领导小组</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script></div></body></html>

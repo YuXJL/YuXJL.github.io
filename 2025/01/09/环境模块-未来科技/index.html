@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>环境模块-未来科技 | 余行京洛</title><meta name="author" content="余行京洛领导小组"><meta name="copyright" content="余行京洛领导小组"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这…是新世界？黑暗，无尽的黑暗。肖兴程感觉他仿佛赤身置于宇宙之中，举目所及之处不见一点光亮，仿佛这是被上帝遗弃的角落。极致的寒冷侵蚀着他的身体，他觉得自己仿佛是漂浮在太空中的一具干尸，没有一丝肌肉细胞能够作出任何反应。 正在他绝望之际，眼前破开一点亮光，似乎温度一点点回到了他的身上。又几乎是一瞬间，那光亮突然像一颗超新星爆发般，夺目的光芒骤然间盛开开来，让久处黑暗的肖兴程不甚习惯。也就在这时，他似">
+<meta property="og:type" content="article">
+<meta property="og:title" content="环境模块-未来科技">
+<meta property="og:url" content="https://yuxjl.github.io/2025/01/09/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97-%E6%9C%AA%E6%9D%A5%E7%A7%91%E6%8A%80/index.html">
+<meta property="og:site_name" content="余行京洛">
+<meta property="og:description" content="这…是新世界？黑暗，无尽的黑暗。肖兴程感觉他仿佛赤身置于宇宙之中，举目所及之处不见一点光亮，仿佛这是被上帝遗弃的角落。极致的寒冷侵蚀着他的身体，他觉得自己仿佛是漂浮在太空中的一具干尸，没有一丝肌肉细胞能够作出任何反应。 正在他绝望之际，眼前破开一点亮光，似乎温度一点点回到了他的身上。又几乎是一瞬间，那光亮突然像一颗超新星爆发般，夺目的光芒骤然间盛开开来，让久处黑暗的肖兴程不甚习惯。也就在这时，他似">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yuxjl.github.io/img/cover/general_cover.jpg">
+<meta property="article:published_time" content="2025-01-09T12:31:44.000Z">
+<meta property="article:modified_time" content="2025-01-10T13:58:46.000Z">
+<meta property="article:author" content="余行京洛领导小组">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yuxjl.github.io/img/cover/general_cover.jpg"><link rel="shortcut icon" href="/img/yxjl.png"><link rel="canonical" href="https://yuxjl.github.io/2025/01/09/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97-%E6%9C%AA%E6%9D%A5%E7%A7%91%E6%8A%80/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '环境模块-未来科技',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/inject.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/yxjl-icon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-tasks"></i><span> 概述模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%83%BD%E6%BA%90%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-battery-4"></i><span> 能源模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-flask"></i><span> 科技模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-globe"></i><span> 环境模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E4%BA%BA%E7%BE%A4%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-users"></i><span> 人群模块</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">余行京洛</span></a><a class="nav-page-title" href="/"><span class="site-name">环境模块-未来科技</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A6%82%E8%BF%B0%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-tasks"></i><span> 概述模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E8%83%BD%E6%BA%90%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-battery-4"></i><span> 能源模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-flask"></i><span> 科技模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-globe"></i><span> 环境模块</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E4%BA%BA%E7%BE%A4%E6%A8%A1%E5%9D%97/"><i class="fa-fw fas fa-users"></i><span> 人群模块</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">环境模块-未来科技</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-01-09T12:31:44.000Z" title="发表于 2025-01-09 20:31:44">2025-01-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-10T13:58:46.000Z" title="更新于 2025-01-10 21:58:46">2025-01-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97/">环境模块</a></span></div><div class="meta-secondline"></div></div></div><article class="container post-content" id="article-container"><h1 id="这…是新世界？"><a href="#这…是新世界？" class="headerlink" title="这…是新世界？"></a>这…是新世界？</h1><p>黑暗，无尽的黑暗。肖兴程感觉他仿佛赤身置于宇宙之中，举目所及之处不见一点光亮，仿佛这是被上帝遗弃的角落。极致的寒冷侵蚀着他的身体，他觉得自己仿佛是漂浮在太空中的一具干尸，没有一丝肌肉细胞能够作出任何反应。</p>
+<p>正在他绝望之际，眼前破开一点亮光，似乎温度一点点回到了他的身上。又几乎是一瞬间，那光亮突然像一颗超新星爆发般，夺目的光芒骤然间盛开开来，让久处黑暗的肖兴程不甚习惯。也就在这时，他似乎想起了什么，好像是……自己似乎……得了绝症……正在接受治疗来着？紧接着，此前的记忆如钱塘江浪潮般汹涌而来：地球的毁灭、人类的劫难、新地球的建设，还有自己心心念念的陈忻晓。是啊，她现在会在哪里呢？我现在又是在哪里呢？这时，他已然完全褪去了寒冷之意，下意识地他感受了一下病症应该带来的疼痛，却什么都没有感觉到。</p>
+<p>“肖先生，您现在感觉怎么样？”一个轻细而温柔的声音传入肖兴程的脑海中。这是陈吗？不，不会是她。他随即否定了自己的想法，因为陈忻晓的声音要比这多出一点忧郁的感觉。肖兴程感到自己被谁托着背坐了起来，适应了眼前实际上并不刺眼的光芒之后，便环顾了周遭的环境。他惊讶地发现，周围并没有人，而是他所躺的，就像是一张床的——或者说一副棺材——的机器的上半部分顺着他的背部向上抬起。此时他感到自己的身体已经完全干燥且温暖，看到身边恰好有一套白色的衣服，他便拿起来套在身上——并不意外地，十分合身。他挣扎着站下了地，却双腿一软，向前栽倒去。就在这时，地板突然凸起，如同一双手轻轻托住了他，并支撑着他站了起来。</p>
+<p>“肖先生，现在是公元 $2124$ 年 $12$ 月 $6$ 日，您所在的位置是第 $233$ 号冬眠仓，开始冬眠时间为 $2064$ 年 $5$ 月 $29$ 日。冬眠委托人：陈忻晓女士。”那个温柔的声音突然说道。当肖听到最后的名字的时候，他明白了一切。他当时已经病入膏肓，已经没有任何的办法了，在他最后弥留之际，陈忻晓果断将他送到了刚刚成立的冬眠中心。尽管不能完全信任冬眠技术，毕竟这一技术在当时是被认为还在测试阶段，这一点直到第一位冬眠者的成功苏醒，且没有任何异常，才被证实没有安全隐患。肖兴程颤抖地问着机器陈忻晓的下落——尽管他并不觉得这个机器会回答，它大概只是一个只能照着固定模板说话的波音器。然而话音没落，机器就打断他说道：“为了您苏醒后的身心健康，接下来会有专人来照料您，并为您解答任何问题，为您更好融入当前社会作准备。您可以尝试穿上仓边放的鞋子，它可以帮助您站立和行走。”顺着它的指示，肖兴程看到了那双同样是纯白色的，看着坚硬无比的形似鞋子的东西。他几乎是靠在地面伸出的凸起上，慢慢移动到了所谓“鞋子”边上，就在他尝试着抬起脚穿鞋的时候，门突然被推开了。</p>
+<p>“您就是肖兴程博士吧，我是您的对接专人 Warmy，您可以直接叫我小锅盖。”眼前这个身材娇小的女孩朝着肖兴程微笑着。但是眼尖的肖兴程却注意到了 Warmy 身上一些十分细小的棱角，这仿佛是……外骨骼？“我来帮您穿助行鞋！” Warmy 边说着边走向肖兴程，抬起肖无力的脚，然后轻轻放进白色的鞋子中。就在此时，鞋子的口突然张开，等完全穿好之后，鞋子两边向上“长”出了几根细条，汇聚到肖的膝关节处。肖兴程感到自己的腿仿佛被托举了起来，站立对他而言已经无需更多的力气，而他的腿微小的动作就会被鞋子转换成幅度较大的动作，从而产生一种能够很轻易地移动的感觉。“……这个……好神奇……”肖终于说了苏醒后的第一句话，略有些嘶哑。“嘿嘿，这个是外骨骼技术，依靠便携式核聚变来驱动，不仅能够满足行动不便的人的基本需求，还能让人们更适应一些承重的劳动，不过这些事现在都已经让机器人代替了。” Warmy 不无得意地向肖兴程介绍道。</p>
+<p>“便携式核聚变？”肖兴程略感到有些吃惊——他们当时给未来定下的目标，原来早就实现了吗？“是的！我们结合了混合重组的超导技术，让整个核聚变过程能够在一个极小的体量内进行，然后再以 DEC 的电子离子分离技术直接得到其产生的能源，这样，每个人都能携带一个小反应堆。而且我们也集成了对废料的清洁处理设备，不用担心它对人体的伤害！”</p>
+<p>肖有些感动，同时有些激动。他已经迫不及待见识这世界现在的模样了。“那我们的电车！是不是已经不需要充电了！”“我们已经不需要电车了，每个人都有一套支持飞行的外骨骼，人们可以直接在空中飞行完成通勤。当然，每套系统都会连接计算中心辅助飞行，防止人们出现空中的交通事故。到目前为止，只发生过两次空中的事故，且仅造成轻微受伤。”</p>
+<p>看着肖兴程一脸震惊的样子，Warmy 忍不住笑了起来，并连忙安慰道：“没关系的肖博士，每个冬眠者都会这样，您不是一个人。这个世界的新东西还不止于此呢！由于生产力和能源总量的突破，我们已经建立起了完善的太空娱乐体系和卫星系统，再加上与其他小组交换得到的新材料技术，我们已经实现了您那时候想象的太空电梯。每个人都可以去体验一番失重的感觉。”“我现在就想去！”肖如同一个孩子般叫嚣道。Warmy 摇摇头：“不行哦，您现在需要恢复一下肌肉力量，不能完全依靠外骨骼的。尽管我们有着发达的外骨骼技术，但是国家还是要求每个人能够有达标的肉体力量，来保证人类发展的健康……”</p>
+<p>就在 Warmy 正侃侃而谈的时候，门又一次被打开。是一个机器人，上面放着一个盒子，依然，是纯白色的。“哦，午餐时间~”Warmy突然站起来朝肖兴程笑道，“这是您苏醒后第一餐哦~您可以尝尝我们人造肉味道，保证不错的。”听得此话，肖兴程才发觉自己似乎是有点饿了，不过已经太久没有饿，自己都不知道什么是饿了。Warmy 打开饭盒的那一刻，热气喷薄而出，随之而来的是扑鼻的香味。“！这味道！”肖兴程心里一紧，“好香！”由于手部肌肉还没有恢复，他便只能让 Warmy 喂他吃。当肖吃进一口所谓的蟹肉的时候，他开始怀疑城市的选址是否已经变到了海边，或者人们进口了什么海鲜。这鲜甜的口感绝对不是 Warmy 口中的“人造肉”，这已经严重超出了他的认知范畴。Warmy 只好笑道：“我们有足够的能源来驱动超级计算机，通过它的暴力枚举我们很容易能够知道世界上任何一种肉的味道可以由什么原材料，通过怎样的方式组合起来得到。您不用怀疑，这个就是蟹肉，甚至组成都是一模一样的。”</p>
+<p>“刚才说到，我们城市已经由以生活为核心变成生活游憩双核心的城市了。这是因为生产力的突破使得更多的人能够放下工作，而腾出更多的时间来放松娱乐。渐渐地，游憩变成了人们生活中很重要的一部分，人们甚至为了这个开始自由地发展算力竞赛和 CTF 比赛，从而能够获得在游戏中的一些奖励——哦对了！肖博士您带领设计的那款，仿照《头号玩家》的「绿洲」做的 VR 沉浸式游戏已经上市，并逐渐变成了普及全民的游戏，学校甚至开始用它来教学了，热度堪比当年的 Minecraft 啊……”</p>
+<p>“还有我们的托卡马克装置——高度集成化的工业体系帮助我们完成了对它的建造。它在我们附近，打开窗就可以看到啦……”肖心神一动，随即轻推开了窗帘。一座淡灰色的建筑隐约浮现，但是那似乎又不像是一栋建筑，因为它正在不断地收缩、扩张、然后再收缩、扩张……他不敢相信自己的眼睛，并且下意识按住了自己的左胸口。“……您可别太过激动，等恢复好您就可以亲自前去一睹为快啦！虽然现在可控核聚变已经便携化了，但是毕竟能源的转化率仍然有限，需要用到大量能量、集中度高的地方还是要用到它。曾经的它是全世界的核心。如今的它似乎作用有所减少，但我们一定不会忘记它在我们世界科技史中的里程碑意义。有了这颗大心脏，我们的科技才得以发展，更多的奇思妙想才得以实现。”</p>
+<p>虽然 Warmy 已经陪伴了无数苏醒者，但是每当她看到苏醒者惊讶的表情，她还是由衷地为他们能够进入一个新的世界感到高兴。然而当肖兴程看着眼前的繁荣和生机如山水画卷般铺开之时，激动之余却有些怅然。他的陈忻晓，大概是见不到了，就算能再见到，二人也差了整整 $60$ 年的年纪，已经物是人非了吧。但面对着热情的 Warmy，他勉强抬起头，用微笑回应。电光火石间，他仿佛看到了一个人。如此熟悉。</p>
+<p>在跃动的富有活力的建筑、几百年来一直密布的翠绿植被、有序迅捷的飞行人流、充满科技感和人情味的冬眠舱、不知何时出现默默收拾午餐盒的自洁机器人前，他庆幸自己仔细认真地看了这一眼。他知道，她还在……</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://YuXJL.github.io">余行京洛领导小组</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yuxjl.github.io/2025/01/09/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97-%E6%9C%AA%E6%9D%A5%E7%A7%91%E6%8A%80/">https://yuxjl.github.io/2025/01/09/%E7%8E%AF%E5%A2%83%E6%A8%A1%E5%9D%97-%E6%9C%AA%E6%9D%A5%E7%A7%91%E6%8A%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://YuXJL.github.io" target="_blank">余行京洛</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://YuXJL.github.io/img/cover/general_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related  no-desc" href="/2025/01/09/%E4%BA%BA%E7%BE%A4%E6%A8%A1%E5%9D%97-%E6%9C%AA%E6%9D%A5%E7%A7%91%E6%8A%80/" title="人群模块-未来科技"><img class="cover" src="https://YuXJL.github.io/img/cover/general_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">人群模块-未来科技</div></div></div></a><a class="pagination-related  no-desc" href="/2025/01/09/%E7%A7%91%E6%8A%80%E6%A8%A1%E5%9D%97-%E6%9C%AA%E6%9D%A5%E7%A7%91%E6%8A%80/" title="科技模块-未来科技"><img class="cover" src="https://YuXJL.github.io/img/cover/general_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">科技模块-未来科技</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/yxjl-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">余行京洛领导小组</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><!--a(href=url_for(config.tag_dir) + '/')--><!--  .headline= _p('aside.tags')--><!--  .length-num= site.tags.length--><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到余行京洛！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%99%E2%80%A6%E6%98%AF%E6%96%B0%E4%B8%96%E7%95%8C%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">这…是新世界？</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By 余行京洛领导小组</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script></div></body></html>
